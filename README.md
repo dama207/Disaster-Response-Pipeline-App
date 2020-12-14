@@ -4,7 +4,24 @@ Data science nanodegree (udacity)
 The messages send after a disaster can to help in labors of rescue, this project build an app web that contains an ML model, this model help to classifier a message in several categories of importance, and send it to appropriate disaster relief agency.
  
  # APP WEB.
+ 
+ -Home page
+ 
  ![Home page](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image1.jpg)
+ 
+  -Plot 1
+  
+ ![Plot 1](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image2.jpg)
+ 
+  -Plot 2
+  
+ ![Plot 2](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image3.jpg)
+ 
+  -Classification 
+  
+ ![classification](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image4.jpg)
+ 
+ ![classification](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image5.jpg)
 
 
 # Instructions:
