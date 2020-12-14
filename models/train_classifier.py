@@ -23,7 +23,16 @@ import pickle
 
 
 def load_data(database_filepath):
-    '''Load dataframe and returns X, Y, category_names'''
+    '''Load dataframe and returns X, Y, category_names
+    Args:
+       database_filepath :  Path file data.
+    
+    Returns:
+        X: Dataframe with features to train model.
+        Y: Target features.
+        category_names: Name of categories.
+    
+    '''
     
     # load data from database
     engine = create_engine('sqlite:///'+ database_filepath )
@@ -37,7 +46,12 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
-    '''clean text (remove whitespace and punctuation) , tokenize and lemmatize text '''
+    '''clean text (remove whitespace and punctuation) , tokenize and lemmatize text 
+    Args:
+       text : text to prepare.
+    Returns:
+       clean_tokens:  normalized, tokenized and lemmatized text.
+    '''
     
     text = re.sub(r'[^\w\s]','',text)
     tokens = word_tokenize(text)
@@ -53,7 +67,10 @@ def tokenize(text):
 
 
 def build_model():
-    '''train model(RandomForestClassifier)'''
+    '''train model(RandomForestClassifier)
+    Returns:
+        model: best model to classifier data. 
+    '''
     
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
@@ -73,7 +90,13 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    '''evaluate model with Accuracy, precision score, recall score and f1 score'''
+    '''evaluate model with Accuracy, precision score, recall score and f1 score
+    Args:
+        model: model to evaluate.
+        X_test: features to evaluate model.
+        Y_test: Real values of target feature.
+        category_names: Name of categories.
+    '''
     
     y_pred = model.predict(X_test)
     
@@ -95,7 +118,11 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-    '''save model in a pkl file'''
+    '''save model in a pkl file
+    Args:
+       model: model to save.
+       model_filepath: Name to save model   
+    '''
 
     pickle.dump(model, open(model_filepath, 'wb'))
     pass
