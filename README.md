@@ -22,6 +22,37 @@ The messages send after a disaster can to help in labors of rescue, this project
  ![classification](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image4.jpg)
  
  ![classification](https://github.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image5.jpg)
+ 
+
+#Files in repository
+
+D:\WORKSPACE
+   
+|   README.md
+
++---app  
+|   |   run.py   // Flask file to run the web application.
+
+|   \---templates  // Contains html files.
+
+|         go.html
+
+|         master.html
+
++---data
+|      DisasterResponse.db   // Output of etl pipeline.
+
+|      disaster_categories.csv  // Datafile of all the categories.
+
+|      disaster_messages.csv    // Datafile of all the messages.
+
+|      process_data.py          // ETL pipeline scripts.
+
++---models
+|      train_classifier.py    // ML pipeline scripts to train and export a classifier.
+
+|      classifier.pkl         // model in pkl file
+
 
 
 # Instructions:
