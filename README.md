@@ -7,7 +7,7 @@ The messages send after a disaster can to help in labors of rescue, this project
  
 - Home page
 
-(https://raw.githubusercontent.com/dama207/Disaster-Response-Pipeline-App/blob/main/Images%20app/image1.jpg)
+(https://raw.githubusercontent.com/dama207/Disaster Response Pipeline App/Images app/image1.jpg)
 
 
 # Instructions:
